@@ -4,7 +4,7 @@ import paho.mqtt.client as mqtt
 # Configuración MQTT
 def enviar_comando(topic, msg):
     client = mqtt.Client()
-    client.connect("broker.hivemq.com", 1883)
+    client.connect("broker.mqttdashboard.com", 1883)
     client.publish(topic, msg)
     client.disconnect()
 
