@@ -8,7 +8,7 @@ def enviar_comando(topic, msg):
     client.publish(topic, msg)
     client.disconnect()
 
-st.title("🔐 Control de Acceso")
+st.title("Control de Acceso")
 
 st.info("Utilice la cámara para validación biométrica o comandos de voz.")
 
