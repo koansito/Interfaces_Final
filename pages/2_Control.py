@@ -13,9 +13,9 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("Iluminación")
-    if st.button("💡 Encender Sala"):
+    if st.button("Encender Sala"):
         enviar_comando("casa/sala/luz", "ON")
-    if st.button("🌑 Apagar Sala"):
+    if st.button("Apagar Sala"):
         enviar_comando("casa/sala/luz", "OFF")
 
 with col2:
